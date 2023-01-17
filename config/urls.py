@@ -29,4 +29,8 @@ urlpatterns = [
     path('cart/add/', views.AddCartView.as_view()), #カート追加
     path('cart/remove/<str:pk>/', views.remove_from_cart),
 
+    # Pay
+    path('pay/checkout/', views.PayWithStripe.as_view()),
+    path('pay/success/', views.PaySuccessView.as_view()),
+    path('pay/cancel/', views.PayCancelView.as_view()),
 ]

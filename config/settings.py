@@ -140,3 +140,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
 TAX_RATE = 0.1
+
+# Stripe APIKEY
+STRIPE_API_SECRET_KEY=env.str('STRIPE_API_SECRET_KEY')
+
+# スキーマ＆ドメイン
+MY_URL=env.str('MY_URL')
